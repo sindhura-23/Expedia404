@@ -1,0 +1,29 @@
+### Summary
+This PR implements user authentication using JWT. It includes:
+- User registration endpoint
+- User login endpoint
+- JWT token generation and validation
+
+### Changes
+- Added `AuthController` with endpoints for user registration and login.
+- Created `User` entity and repository.
+- Implemented `JwtUtil` for token generation and validation.
+- Added unit tests for the new features.
+
+### How to Test
+1. Run the application.
+2. Use Postman to test the registration and login endpoints:
+   - `POST /api/auth/register` with user details.
+   - `POST /api/auth/login` with username and password.
+3. Verify that a JWT token is returned on successful login.
+
+### Screenshots
+N/A
+
+### Related Issues
+Fixes #45
+
+### Checklist
+- [x] Code is working as expected.
+- [x] Tests have been added/updated.
+- [x] Documentation has been updated if necessary.
